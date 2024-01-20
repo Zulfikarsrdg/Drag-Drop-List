@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-Drop List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="text">Drag-Drop List</h1>
+        </div>
+        <div class="sortable-list">
+            <div class="item">
+                <span class="text">Draggable list-1</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Draggable list-2</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Draggable list-3</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Draggable list-4</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Draggable list-5</span>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let list = document.querySelector(".sortable-list");
+    new Sortable(list, {
+        animation: 500,
+        direction: 'vertical' 
+    });
+</script>
+    
+</body>
+</html>
